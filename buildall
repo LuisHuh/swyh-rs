@@ -3,4 +3,4 @@ echo "Build all"
 
 cargo fmt --all
 cargo update && cargo upgrade
-cargo build && cargo build --release && cargo build --target=i686-pc-windows-msvc && cargo build --target=i686-pc-windows-msvc --release
+cargo build && cargo build --release && cargo build --target=x86_64-unknown-linux-gnu && cargo build --target=x86_64-unknown-linux-gnu --release

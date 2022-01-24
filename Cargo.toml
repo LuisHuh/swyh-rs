@@ -20,7 +20,8 @@ chrono = "0.4.19"
 cpal = "0.13.4"
 crossbeam-channel = "0.5.2"
 dirs = "4.0.0"
-fltk = { version = "1.2.27", features = ["use-ninja"] }
+# fltk = { version = "1.2.27", features = ["use-ninja"] }
+fltk = { version = "^1.2", features = ["fltk-bundled"] }
 htmlescape = "0.3.1"
 ifcfg = "0.1.2"
 lazy_static = "1.4.0"
@@ -39,9 +40,11 @@ toml = "0.5.8"
 ureq = { version = "2.4.0", features = ["charset"] }
 url = "2.2.2"
 xml-rs = "0.8.4"
+
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3.9", features = ["winuser", "std"] }
 winres = "0.1.12"
+
 [target.'cfg(unix)'.dependencies]
 libc = "0.2.112"
 
